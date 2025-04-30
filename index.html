@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Produtos Cadastrados</h1>
+
+        <div id="mensagemCarregando" class="loading">Carregando dados do supabase...</div>
+
+        <div id="mensagemErro" class="error" style="display: none"></div>
+
+        <table id="tabelaProdutos" style="display: none">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Data de Criação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoDaTabela">
+
+            </tbody>
+        </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
